@@ -1,0 +1,13 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 10.190.67.128 # rabbitMq的ip地址
+    port: 5672  # 端口
+    username: xiaoxiaoyi
+    password: 1026
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1 # 定义预期的消息数, 处理完1条才可以取下一条消息
